@@ -18,14 +18,22 @@
         <div class="flex flex-col lg:flex-row">
             <!-- shape container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- first card -->
+                <!-- Triangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Triangle</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <p>Area (A) = 0.5 X b X h</p>
+                      <p>
+                        <input type="text" class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" name="" id="triangle-base">
+                        <span class="ml-2">cm</span>
+                        <!-- triangle height -->
+                        <input type="text" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height" name="" id="triangle-height">
+                        <span class="ml-2">cm</span>
+                      </p>
+                      <p>Area: <span></span></p>
+                      <div class="card-actions">
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -58,6 +66,7 @@
             </div>
         </div>
     </main>
+    <script src="scripts/area-calculator.js"></script>
 </body>
 
 </html>
