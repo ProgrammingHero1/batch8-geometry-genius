@@ -31,9 +31,28 @@
                         <input type="text" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height" name="" id="triangle-height">
                         <span class="ml-2">cm</span>
                       </p>
-                      <p>Area: <span></span></p>
+                      <p class="text-2xl">Area: <span id="triangle-area">0</span> cm<sup>2</sup></p>
                       <div class="card-actions">
                         <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Rectangle card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w X l</p>
+                      <p>
+                        <input type="text" class="border bg-gray-200 text-xl w-24 px-2" placeholder="width" name="" id="rectangle-width">
+                        <span class="ml-2">cm</span>
+                        <!-- rectangle length -->
+                        <input type="text" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="length" name="" id="rectangle-length">
+                        <span class="ml-2">cm</span>
+                      </p>
+                      <p class="text-2xl">Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
+                      <div class="card-actions">
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
