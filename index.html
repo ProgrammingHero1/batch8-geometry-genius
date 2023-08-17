@@ -19,16 +19,16 @@
             <!-- shape container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Triangle card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-96 bg-base-100 shadow-xl hover:bg-purple-300">
                     <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Triangle</h2>
                       <p>Area (A) = 0.5 X b X h</p>
                       <p>
-                        <input type="text" class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" name="" id="triangle-base">
+                        <input type="number" class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" name="" id="triangle-base">
                         <span class="ml-2">cm</span>
                         <!-- triangle height -->
-                        <input type="text" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height" name="" id="triangle-height">
+                        <input type="number" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height" name="" id="triangle-height">
                         <span class="ml-2">cm</span>
                       </p>
                       <p class="text-2xl">Area: <span id="triangle-area">0</span> cm<sup>2</sup></p>
@@ -121,6 +121,9 @@
             <!-- area calculator -->
             <div class="w-[400px]">
                 <div class="text-4xl">Area Calculator</div>
+                <div id="calculation-entry">
+                  
+                </div>
             </div>
         </div>
     </main>
